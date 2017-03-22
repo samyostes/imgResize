@@ -64,7 +64,7 @@ imagejpeg($image_p, NULL, 90);
 echo imgResize("flower.jpg",500,"r"); 
 echo "<p>"; 
 
-//c=crop image not saved but shown on the fly
+//c=crop image
 echo imgResize("flower.jpg",200,"c");
 
 ?>
