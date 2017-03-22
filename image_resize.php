@@ -49,7 +49,7 @@ imagejpeg($image_p, $tar, 90);
 
 }
 
-//crop the image as a square
+//crop the image 
 if($type=="c") { 
 imagecopyresampled($image_p, $image, 0, 0, $x, $y, $size, $size, $smallestSide, $smallestSide);
 imagejpeg($image_p, NULL, 90);
@@ -59,13 +59,12 @@ imagejpeg($image_p, NULL, 90);
 
 }
 
-//to test this pass an image as a paramater an put the desired size as a second param
-//check your image size after you run the file;
-//r =resize...image saved on the directory ;
+
+//r =resize ;
 echo imgResize("flower.jpg",500,"r"); 
 echo "<p>"; 
 
-//c=crop imaage not saved but shown on the fly
+//c=crop image not saved but shown on the fly
 echo imgResize("flower.jpg",200,"c");
 
 ?>
