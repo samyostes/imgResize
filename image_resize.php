@@ -1,10 +1,11 @@
 <?php
 //author Samson Yoseph samjosus@yahoo.com
 //this function resizes or crops image and display on the fly
-//try it by inserting path of the image, desired size and type ( c for crop and r for resize)
+//try it by passing path of the image, desired size and type ( c for crop and r for resize)
 function imgResize($tar,$size,$type){ 
-
-list($w, $h)=getimagesize($tar); //get umage width and height
+   
+//get image width and height
+list($w, $h)=getimagesize($tar); 
 $minMax=max($w,$h);
 
 // resize image when user uploads large image
