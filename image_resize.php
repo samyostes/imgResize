@@ -7,7 +7,7 @@ function imgResize($tar,$size,$type){
 list($w, $h)=getimagesize($tar); 
 $minMax=max($w,$h);
 
-//get the image size and get the ration of height and width
+//get the image size and get the ratio of height and width in relation to the required size
   //'r' represnts resize
 if($type=="r"){
     if($w>=$size or $h>=$size) {
